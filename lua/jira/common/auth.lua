@@ -1,6 +1,6 @@
 local M = {}
 
-local AUTH_FILE = vim.fn.stdpath("data") .. "/jira_nvim_auth.json"
+local AUTH_FILE = require("jira.common.config").get_data_dir() .. "/jira_nvim_auth.json"
 
 ---@class JiraAuth
 ---@field base string

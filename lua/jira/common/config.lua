@@ -57,5 +57,9 @@ function M.get_project_config(project_key)
   }
 end
 
+function M.get_data_dir()
+  return vim.fn.stdpath("data") .. "/jira"
+end
+
 return M
 -- vim: set ts=2 sts=2 sw=2 et ai si sta:
