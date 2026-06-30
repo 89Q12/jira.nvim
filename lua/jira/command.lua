@@ -2,8 +2,7 @@
 local M = {}
 
 ---@type string[]
-M.SUBCOMMANDS = { "info", "edit", "create", "auth" }
-
+M.SUBCOMMANDS = { "info", "edit", "create", "auth", "time" }
 ---@param args string
 function M.execute(args)
   local parts = {}
